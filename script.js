@@ -14,7 +14,7 @@ for (const link of navLinks) {
 }
 
 const navigationIcon = document.querySelector('.navigation-icon');
-const heroSection = document.getElementById('hero');
+const mainSection = document.getElementById('main');
 
 const handleScroll = () => {
   const scrollY = window.scrollY;
@@ -36,7 +36,7 @@ navigationIcon.addEventListener('click', (event) => {
   }
 });
 
-if (heroSection.offsetTop > 0) {
+if (mainSection.offsetTop > 0) {
   navigationIcon.style.display = 'block';
 } else {
   navigationIcon.style.display = 'none';
