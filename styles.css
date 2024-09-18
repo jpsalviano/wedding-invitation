@@ -4,8 +4,11 @@
   box-sizing: border-box;
 }
 
-body {
-  display: contents;
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 p {
@@ -13,6 +16,7 @@ p {
 }
 
 section {
+  scroll-snap-align: start;
   height: 100vh;
 }
 
@@ -36,8 +40,8 @@ a {
   color: #6ca553;
 }
 
-.navigation-icon:hover { /* Styles for hover effect */
-  opacity: 1;  /* Increase opacity on hover */
+.navigation-icon:hover {
+  opacity: 1;
 }
 
 .main-container {
