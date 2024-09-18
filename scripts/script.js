@@ -41,3 +41,20 @@ if (mainSection.offsetTop > 0) {
 } else {
   navigationIcon.style.display = 'none';
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  let flkty = new Flickity('.carousel', {
+    autoPlay: true,
+    fullscreen: true,
+    wrapAround: true,
+    pageDots: false,
+    bgLazyLoad: 3
+  });
+
+  flkty.bgLazyLoad(); 
+
+  flkty.on('select', function() {
+    flkty.bgLazyLoad(); 
+  });
+
+});
